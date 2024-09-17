@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Landing page design using html and css in hindi</title>
+<style type="text/css">
+		*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			height: 100vh;
+			background: url(images/pizza2.png);
+			background-size: 50% 90%;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			position: relative;
+		}
+		nav{
+			width: 100%;
+			height: 70px;
+			padding: 0px 70px;
+			background: white;
+			color: black;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 2px 0px 5px grey;
+		}
+		.logo{
+			font-weight: bold;
+			font-size: 2em;
+			letter-spacing: 2px;
+		}
+		.logo span{
+			color: brown;
+		}
+		.menu a{
+			text-decoration: none;
+			color: black;
+			padding: 10px 20px;
+		}
+		.menu a:last-child{
+			background: brown;
+			color: white;
+			border-radius: 8px;
+		}
+
+		.h-text{
+			position: absolute;
+			top:30%;
+			left: 5%;
+			padding: 15px;
+
+		}
+		.h-text p{
+			color: #262626;
+			letter-spacing: 3px;
+			font-weight: bold;
+		}
+		.h-text h1{
+			font-size: 4em;
+			line-height: 1.5em;
+		}
+		.h-text h1 span{
+				color: brown;
+		}
+		.h-text h2{
+			font-size: 4em;
+			margin-bottom: 0.5em;
+		}
+		#order{
+			text-decoration: none;
+			color: white;
+			background: brown;
+			border-radius: 8px;
+			padding: 10px 20px;
+		}
+		#dis{
+			text-decoration: none;
+			color: white;
+			background: #262626;
+			padding: 10px 20px;
+			border-radius: 8px;
+		}
+		.card{
+			height: 350px;
+			width: 250px;
+			border: 1px solid;
+			border-color: black;
+			border-radius: 10px;
+			margin: 10px 15px;
+			padding: 10px;
+			box-shadow: 0px 0px 8px lightslategrey;
+		}
+		.card img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.card h2{
+			text-align: center;
+			font-size: 25px;
+		}
+		.card p{
+			text-align: center;
+			font-size: 20px;
+		}
+		.offers{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.card1{
+			height: 350px;
+			width: 250px;
+			border: 1px solid;
+			border-color: black;
+			border-radius: 10px;
+			margin: 10px 15px;
+			padding: 10px;
+			box-shadow: 0px 0px 8px lightslategrey;
+		}
+		.card2{
+			height: 350px;
+			width: 250px;
+			border: 1px solid;
+			border-color: black;
+			border-radius: 10px;
+			margin: 10px 15px;
+			padding: 10px;
+			box-shadow: 0px 0px 8px lightslategrey;
+		}
+		.card1 img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.card2 img{
+			max-width: 100%;
+			max-height: 270px;
+			padding-left: 20px;
+		}
+		.card2 h2{
+			text-align: center;
+			font-size: 25px;
+		}
+		.card2 p{
+			text-align: center;
+			font-size: 20px;
+		}
+		.foods{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.card1 h2{
+			text-align: center;
+			font-size: 25px;
+		}
+		.card1 p{
+			text-align: center;
+			font-size: 20px;
+		}
+		.foods1{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content:space-around;
+			align-items: center;
+		}
+		.foods2{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.topbtn{
+    	position: fixed;
+    	bottom: 20px;
+    	right: 30px;
+		border-radius: 50%;
+		border: 1px solid black;
+}
+
+footer {
+	  padding: 20px 0;
+	  background-color: #dad4d4;
+	}
+	
+	.container {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  max-width: 1200px;
+	  margin: 0 auto;
+	}
+	
+	.brand {
+	  font-size: 24px;
+	  font-weight: bold;
+	}
+	
+	.social {
+	  display: flex;
+	  gap: 10px;
+	}
+	
+	.social a {
+	  color: #000000;
+	  text-decoration: none;
+	}
+	
+	.social a:hover {
+	  color: #000000;
+	}
+	
+	.nav {
+	  display: flex;
+	  gap: 20px;
+	  font-size: 16px;
+	}
+	
+	.nav a {
+	  color: #000000;
+	  text-decoration: none;
+	}
+	
+	.nav a:hover {
+	  color: #000000;
+	}
+	
+	.additional-info {
+	  font-size: 14px;
+	}
+	
+	.payment {
+	  display: flex;
+	  gap: 10px;
+	}
+	
+	.payment img {
+	  width: 30px;
+	}
+
+</style>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo" id="top"><span>Pi</span>zzahat</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#food">Foods</a>
+			<a href="#offer">Offer's</a>
+			<a href="#">Your Order</a>
+			<a href="#">Delivery</a>
+			<a href="#">Cart</a>
+		</div>
+	</nav>
+	<div class="h-text">
+			<p>Free Home Delivery</p>
+		<h1>Quality F<span>oo</span>ds </h1>
+		<h2>Pizza of the Week</h2>
+		<a href="#" id="order">Order now!!</a>
+		<a href="#offer" id="dis">25% Off Hurry!!</a>
+	</div>
+</header>
+<hr style="color: grey;"><br>
+<h1 style="text-align: center; font-size: 50px; color: brown;" id="offer">Offer's <span style="font-size: 50px; color: black;">For Today</span></h1><br>
+<div class="offers">
+	<div class="card">
+		<img src="images/pizza.png" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>250/-</strike>199/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza4.png" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>250/-</strike>199/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza5.png" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>250/-</strike>199/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza6.png" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>250/-</strike>199/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza7.jpg" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>200/-</strike>149/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza8.jpg" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>200/-</strike>149/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza9.jpg" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>200/-</strike>149/-</p>
+	</div>
+	<div class="card">
+		<img src="images/pizza10.jpg" alt="pizza">
+		<h2>Pizza</h2>
+		<p>Price: <strike>200/-</strike>149/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger2.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger3.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger4.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger5.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div>
+	<div class="card">
+		<img src="images/burger6.avif" alt="pizza">
+		<h2>Burger</h2>
+		<p>Price: <strike>120/-</strike>99/-</p>
+	</div></div>
+	<hr style="color: grey;"><br>
+	<h1 style="font-size: 50px; color: brown; text-align: center;" id="food">Food's<span style="color: black;"> We Offer</span></h1><br>
+	<h1 style="font-size: 35px; text-align: center;">Coffee's</h1><br><br>
+	<div class="foods">
+			<div class="card2">
+				<img src="images/coffee.jpg" alt="">
+				<h2>Cappuccino</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+			<div class="card2">
+				<img src="images/coffee2.jpg" alt="">
+				<h2>Espresso</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+	</div><br><br>
+<h1 style="font-size: 35px; text-align: center;">Pastrie's</h1>
+<br>
+	<div class="foods1">
+			<div class="card1">
+				<img src="images/pastery.avif" alt="">
+				<br><br><br><br>
+				<h2>Chocolate</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+			<div class="card1">
+				<img src="images/pastery2.avif" alt="">
+				<br><br><br><br>
+				<h2>Cheese Chocolate</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+			<div class="card1">
+				<img src="images/pastery3.avif" alt="">
+				<br><br><br><br>
+				<h2>Dark Fantasy</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+			<div class="card1">
+				<img src="images/pastery4.avif" alt="">
+				<br>
+				<h2>Pineapple</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+			<div class="card1">
+				<img src="images/pastery5.avif" alt="">
+				<br>
+				<h2>Choco-Chocolate</h2>
+				<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+		</div><br><br>
+<h1 style="font-size: 35px; text-align: center;">Fries</h1>
+	<div class="foods2">
+			<div class="card1">
+			<img src="images/fries2.avif" alt="">
+			<h2>Frech-Fries
+			</h2>
+			<p>Price: <strike>120/-</strike>99/-</p>
+			</div>
+	</div>
+<a href="#top"  class="topbtn"><img src="images/top.png" alt="top" height="25px"></a>
+	<footer>
+	  <div class="container">
+		<div class="logo" id="top"><span>Pi</span>zzahat</div>
+		<div class="social">
+		  <a href="#">
+			<i class="fab fa-facebook-f"></i>
+		  </a>
+		  <a href="#">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a href="#">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="#">
+			<i class="fab fa-tumblr"></i>
+		  </a>
+		  <a href="#">
+			<i class="fab fa-linkedin-in"></i>
+		  </a>
+		</div>
+		<div class="nav">
+		  <a href="#">ABOUT</a>
+		  <a href="#">RESOURCES</a>
+		  <a href="#">CONTACT</a>
+		  <a href="#">ADDITIONAL INFO</a>
+		</div>
+		<div class="additional-info">
+			<p>&copy; 2024<div class="logo" id="top"><span>Pi</span>zzahat</div> . All rights reserved.</p>
+		</div>
+	  </div>
+	</footer>
+</body>
+</html>
